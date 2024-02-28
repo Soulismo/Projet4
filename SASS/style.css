@@ -15,13 +15,12 @@ body {
 }
 
 /*********Header*********/
-header {
+.header {
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: relative;
 }
-
 .header__logo {
   justify-content: center;
   display: flex;
@@ -38,7 +37,6 @@ header {
   width: 200px;
   height: 40px;
 }
-
 .header__gps-container {
   justify-content: center;
   display: flex;
@@ -257,7 +255,7 @@ h2 {
   font-weight: 700;
   margin: 0;
 }
-.restaurants .restaurants__card {
+.restaurants__card {
   position: relative;
   overflow: hidden;
   display: flex;
@@ -265,48 +263,48 @@ h2 {
   border-radius: 15px;
   background: #ffffff;
 }
-.restaurants .restaurants__card a {
+.restaurants__card a {
   position: relative;
   display: flex;
   flex-direction: column;
   height: 275px;
 }
-.restaurants .restaurants__card a img {
+.restaurants__card a img {
   height: 75%;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.restaurants .restaurants__card a .restaurants__card__content {
+.restaurants__card a .restaurants__card__content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
   padding: 10px;
 }
-.restaurants .restaurants__card a .restaurants__card__content h3 {
+.restaurants__card a .restaurants__card__content h3 {
   font-size: 18px;
   font-family: roboto, sans-serif;
   font-weight: 700;
   margin: 0;
 }
-.restaurants .restaurants__card a .restaurants__card__content p {
+.restaurants__card a .restaurants__card__content p {
   margin: 0;
   font-size: 17px;
   font-family: Roboto, sans-serif;
   font-weight: 300;
 }
-.restaurants .restaurants__card .restaurants__card__content__heart {
+.restaurants__card .restaurants__card__content__heart {
   position: absolute;
   top: 225px;
   right: 45px;
 }
-.restaurants .restaurants__card i {
+.restaurants__card i {
   position: absolute;
   font-size: 1.3rem;
   cursor: pointer;
 }
-.restaurants .restaurants__card .fa-solid {
+.restaurants__card .fa-solid {
   opacity: 0;
   color: transparent;
   background-clip: text;
@@ -314,7 +312,7 @@ h2 {
   transition: all 1s ease-in-out;
   background-image: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
 }
-.restaurants .restaurants__card .fa-solid:hover {
+.restaurants__card .fa-solid:hover {
   opacity: 1;
 }
 

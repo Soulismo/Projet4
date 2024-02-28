@@ -20,36 +20,37 @@ body {
 }
 /*********Header*********/
 
-header {
+.header {
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: relative;
-}
-.header__logo {
-  justify-content: center;
-  display: flex;
-  padding: 15px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
-  z-index: 2;
-  @media screen and (min-width: 768px) {
-    box-shadow: none;
-  }
-  img {
-    width: 200px;
-    height: 40px;
-  }
-}
 
-.header__gps-container {
-  justify-content: center;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 10px;
-  background-color: $header-background;
-  font-family: roboto, sans-serif;
-  height: 60px;
+  &__logo {
+    justify-content: center;
+    display: flex;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    z-index: 2;
+    @media screen and (min-width: 768px) {
+      box-shadow: none;
+    }
+    img {
+      width: 200px;
+      height: 40px;
+    }
+  }
+
+  &__gps-container {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    background-color: $header-background;
+    font-family: roboto, sans-serif;
+    height: 60px;
+  }
 }
 .fa-location-dot {
   font-size: larger;
@@ -282,7 +283,7 @@ h2 {
     font-weight: 700;
     margin: 0;
   }
-  .restaurants__card {
+  &__card {
     position: relative; // Position relative par rapport à son contexte d'origine
     overflow: hidden; // Masquer le contenu qui dépasse
     display: flex;
