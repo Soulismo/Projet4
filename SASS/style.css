@@ -21,6 +21,12 @@ body {
   justify-content: center;
   position: relative;
 }
+.header__arrow-left {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  font-size: 1.5rem;
+}
 .header__logo {
   justify-content: center;
   display: flex;

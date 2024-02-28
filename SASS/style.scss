@@ -25,7 +25,12 @@ body {
   flex-direction: column;
   justify-content: center;
   position: relative;
-
+  &__arrow-left {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    font-size: 1.5rem;
+  }
   &__logo {
     justify-content: center;
     display: flex;
