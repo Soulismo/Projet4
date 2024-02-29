@@ -404,8 +404,8 @@ h2 {
   position: fixed;
   height: 100%;
   width: 100%;
-  background-color: rgba(94, 91, 91, 0.299);
-  z-index: 99999;
+  background-color: rgba(255, 255, 255, 0.299);
+  z-index: 10;
   top: 0;
   left: 0;
   animation: fadeOut 1.5s cubic-bezier(0.18, 0.89, 0.32, 1.28) 1.5s forwards;
@@ -416,7 +416,7 @@ h2 {
   width: 200px;
   border-top: 8px solid #9356dc;
   border-right: 8px solid transparent;
-  border-bottom: 8px solid transparent;
+  border-bottom: 8px solid #353535;
   border-left: 8px solid transparent;
   border-radius: 100px;
   animation: rotateLoader 1s linear infinite;
