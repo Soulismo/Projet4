@@ -80,6 +80,14 @@ input:focus {
   align-items: center;
   gap: 20px;
 }
+.reservation h1 {
+  padding: 40px 55px 0px 55px;
+  text-align: center;
+  margin: 0;
+  font-family: Roboto, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
 .reservation p {
   margin: 0;
   padding: 0 30px;
@@ -387,4 +395,47 @@ h2 {
 .footer__content a .fa-handshake {
   margin-right: 5px;
   rotate: 325deg;
+}
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(94, 91, 91, 0.299);
+  z-index: 99999;
+  top: 0;
+  left: 0;
+  animation: fadeOut 1.5s cubic-bezier(0.18, 0.89, 0.32, 1.28) 1.5s forwards;
+}
+
+.loader {
+  height: 200px;
+  width: 200px;
+  border-top: 8px solid #9356dc;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 8px solid transparent;
+  border-radius: 100px;
+  animation: rotateLoader 1s linear infinite;
+}
+
+@keyframes rotateLoader {
+  0% {
+    transform: rotate(0turn);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1.1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -36,7 +36,6 @@ main {
     top: 14px;
     left: 14px;
     font-size: 1.5rem;
-    justify-content: flex-start;
   }
   &__logo {
     justify-content: center;
@@ -193,8 +192,6 @@ main {
     &__carte {
       background-color: $segondary-background;
       display: flex;
-      justify-content: flex-start;
-      align-items: flex-end;
       width: 100%;
       border-radius: 15px;
       height: 60px;
@@ -213,7 +210,6 @@ main {
           transform: translateX(0px);
           & .fa-circle-check {
             color: white;
-            transform: rotate(2turn);
           }
           & span {
             background-color: #99e2d0;
@@ -258,7 +254,7 @@ main {
       font-family: Roboto;
       font-weight: 700;
       transform: translateX(45px);
-      transition: all 0.4s;
+      transition: all 0.5s;
       p {
         padding-top: 25px;
         margin-right: 10px;
@@ -273,7 +269,7 @@ main {
         border-radius: 0 15px 15px 0px;
         .fa-circle-check {
           color: transparent;
-          transition: all 0.4s;
+          transition: all 0.5s;
         }
       }
     }
