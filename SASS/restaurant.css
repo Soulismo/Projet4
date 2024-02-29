@@ -1,5 +1,19 @@
 @charset "UTF-8";
 /*********Variable*********/
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+* {
+  text-decoration: none;
+  color: inherit;
+  box-sizing: border-box;
+}
+
 @media screen and (min-width: 768px) {
   main {
     display: flex;
@@ -180,4 +194,144 @@
   height: 3px;
   background-color: #99e2d0;
   margin-left: 15px;
+}
+.card-box .card-box__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  gap: 15px;
+}
+.card-box .card-box__container__carte {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  width: 100%;
+  border-radius: 15px;
+  height: 60px;
+  overflow: hidden;
+  /***survolAnimation***/
+}
+.card-box .card-box__container__carte:hover .card-box__container__carte-text h2 {
+  overflow: hidden;
+}
+.card-box .card-box__container__carte:hover .card-box__container__carte-text p {
+  overflow: hidden;
+}
+.card-box .card-box__container__carte:hover .card-box__container__carte-prix {
+  transform: translateX(0px);
+}
+.card-box .card-box__container__carte:hover .card-box__container__carte-prix .fa-circle-check {
+  color: white;
+  transform: rotate(2turn);
+}
+.card-box .card-box__container__carte:hover .card-box__container__carte-prix span {
+  background-color: #99e2d0;
+}
+.card-box .card-box__container__carte-text {
+  margin-right: auto;
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  padding: 0 0 0 15px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.card-box .card-box__container__carte-text h3 {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 1rem;
+  font-family: Roboto;
+  font-weight: 600;
+  margin: 0;
+}
+.card-box .card-box__container__carte-text p {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 0.8rem;
+  font-family: Roboto;
+  font-weight: 300;
+  margin: 0;
+}
+.card-box .card-box__container__carte-prix {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-family: Roboto;
+  font-weight: 700;
+  transform: translateX(45px);
+  transition: all 0.4s;
+}
+.card-box .card-box__container__carte-prix p {
+  padding-top: 25px;
+  margin-right: 10px;
+}
+.card-box .card-box__container__carte-prix span {
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 50px;
+  border-radius: 0 15px 15px 0px;
+}
+.card-box .card-box__container__carte-prix span .fa-circle-check {
+  color: transparent;
+  transition: all 0.4s;
+}
+
+.footer {
+  background: #353535;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  font-family: roboto, sans-serif;
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    flex-direction: row-reverse;
+  }
+}
+.footer__logo h2 {
+  color: white;
+  font-size: 18px;
+  font-family: shrikhand, sans-serif;
+  font-weight: 300;
+  margin: 0 0 10px;
+}
+@media screen and (min-width: 768px) {
+  .footer__logo h2 {
+    margin: 0 40px 10px;
+  }
+}
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+@media screen and (min-width: 768px) {
+  .footer__content {
+    flex-direction: row;
+    margin-right: 80px;
+    align-items: center;
+    gap: 25px;
+  }
+}
+.footer__content a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.footer__content a .fa-utensils {
+  margin-right: 10px;
+}
+.footer__content a .fa-handshake {
+  margin-right: 5px;
+  rotate: 325deg;
 }/*# sourceMappingURL=restaurant.css.map */
