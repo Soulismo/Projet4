@@ -1,10 +1,6 @@
-/*********Variable*********/
-$header-background: #eaeaea;
-$primary-background: #f6f6f6;
-$segondary-background: #ffffff;
-$button-background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
-$color-elipse: #9356dc;
-$footer-background: #353535;
+@import "../SASS/header/header.scss";
+@import "../SASS/footer/footer.scss";
+@import "../SASS/variable/variable.scss";
 
 body {
   display: flex;
@@ -20,42 +16,9 @@ body {
 }
 /*********Header*********/
 
-.header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: relative;
-  &__arrow-left {
-    position: absolute;
-    top: 14px;
-    left: 14px;
-    font-size: 1.5rem;
-  }
-  &__logo {
-    justify-content: center;
-    display: flex;
-    padding: 15px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
-    z-index: 2;
-    @media screen and (min-width: 768px) {
-      box-shadow: none;
-    }
-    img {
-      width: 200px;
-      height: 40px;
-    }
-  }
-
-  &__gps-container {
-    justify-content: center;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-    background-color: $header-background;
-    font-family: roboto, sans-serif;
-    height: 60px;
-  }
+.header__logo img {
+  width: 200px;
+  height: 40px;
 }
 .fa-location-dot {
   font-size: larger;
@@ -375,52 +338,6 @@ h2 {
 
 /******Footer*******/
 
-.footer {
-  // Configuration pour les écrans de taille moyenne et supérieure
-  @media screen and (min-width: 768px) {
-    flex-direction: row-reverse; // Inverser l'ordre des éléments dans le footer
-  }
-  background: $footer-background;
-  display: flex;
-  flex-direction: column; // Disposition verticale des éléments
-  padding: 20px;
-  font-family: roboto, sans-serif;
-  &__logo {
-    h2 {
-      color: white;
-      font-size: 18px;
-      font-family: shrikhand, sans-serif;
-      font-weight: 300;
-      margin: 0 0 10px;
-      @media screen and (min-width: 768px) {
-        margin: 0 40px 10px; // Marge différente pour les écrans de taille moyenne et supérieure
-      }
-    }
-  }
-  &__content {
-    // Configuration pour les écrans de taille moyenne et supérieure
-    @media screen and (min-width: 768px) {
-      flex-direction: row;
-      margin-right: 80px;
-      align-items: center; // Alignement vertical des éléments au centre
-      gap: 25px;
-    }
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    a {
-      color: $segondary-background;
-      text-decoration: none;
-      .fa-utensils {
-        margin-right: 10px;
-      }
-      .fa-handshake {
-        margin-right: 5px;
-        rotate: 325deg; // Rotation de l'icône de 325 degrés
-      }
-    }
-  }
-}
 .loader-container {
   display: flex;
   justify-content: center;
