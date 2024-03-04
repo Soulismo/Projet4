@@ -6,9 +6,11 @@
   position: relative;
 }
 .header .arrow-left {
+  position: absolute;
   font-size: 30px;
   margin-right: auto;
-  color: rgb(53, 53, 53);
+  width: 17px;
+  left: 25px;
 }
 .header__logo {
   justify-content: center;
@@ -23,8 +25,21 @@
   }
 }
 .header__logo img {
-  width: 100%;
+  width: 200px;
   height: 40px;
+}
+.header__logo h2 {
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+  font-family: shrikhand, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  margin: 0 0 10px;
+}
+@media screen and (min-width: 768px) {
+  .header__logo h2 {
+    margin: 0 40px 10px;
+  }
 }
 .header__gps-container {
   justify-content: center;

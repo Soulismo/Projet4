@@ -6,9 +6,11 @@
   justify-content: center;
   position: relative;
   .arrow-left {
+    position: absolute;
     font-size: 30px;
     margin-right: auto;
-    color: rgb(53, 53, 53);
+    width: 17px;
+    left: 25px;
   }
   &__logo {
     justify-content: center;
@@ -20,8 +22,19 @@
       box-shadow: none;
     }
     img {
-      width: 100%;
+      width: 200px;
       height: 40px;
+    }
+    h2 {
+      color: rgb(0, 0, 0);
+      font-size: 30px;
+      font-family: shrikhand, sans-serif;
+      font-weight: 400;
+      font-style: italic;
+      margin: 0 0 10px;
+      @media screen and (min-width: 768px) {
+        margin: 0 40px 10px; // Marge différente pour les écrans de taille moyenne et supérieure
+      }
     }
   }
   &__gps-container {
