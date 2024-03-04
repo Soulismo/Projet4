@@ -15,8 +15,7 @@
   &__logo {
     justify-content: center;
     display: flex;
-    padding: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    padding: 15px;
     z-index: 2;
     @media screen and (min-width: 768px) {
       box-shadow: none;
@@ -24,17 +23,6 @@
     img {
       width: 197px;
       height: 36px;
-    }
-    h2 {
-      color: rgb(0, 0, 0);
-      font-size: 30px;
-      font-family: shrikhand, sans-serif;
-      font-weight: 400;
-      font-style: italic;
-      margin: 0 0 10px;
-      @media screen and (min-width: 768px) {
-        margin: 0 40px 10px; // Marge différente pour les écrans de taille moyenne et supérieure
-      }
     }
   }
   &__gps-container {

@@ -15,8 +15,7 @@
 .header__logo {
   justify-content: center;
   display: flex;
-  padding: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  padding: 15px;
   z-index: 2;
 }
 @media screen and (min-width: 768px) {
@@ -27,19 +26,6 @@
 .header__logo img {
   width: 197px;
   height: 36px;
-}
-.header__logo h2 {
-  color: rgb(0, 0, 0);
-  font-size: 30px;
-  font-family: shrikhand, sans-serif;
-  font-weight: 400;
-  font-style: italic;
-  margin: 0 0 10px;
-}
-@media screen and (min-width: 768px) {
-  .header__logo h2 {
-    margin: 0 40px 10px;
-  }
 }
 .header__gps-container {
   justify-content: center;
@@ -243,7 +229,9 @@ h2 {
 .fonctionnement .fonctionnement__choix-container a {
   color: black;
 }
-.fonctionnement .fonctionnement__choix-container .fonctionnement__choix-container__composant {
+.fonctionnement
+  .fonctionnement__choix-container
+  .fonctionnement__choix-container__composant {
   position: relative;
   display: flex;
   align-items: center;
@@ -279,7 +267,9 @@ h2 {
 .fonctionnement .fonctionnement__choix-container .fa-solid {
   font-weight: 900;
 }
-.fonctionnement .fonctionnement__choix-container .fa-solid.fa-mobile-screen-button {
+.fonctionnement
+  .fonctionnement__choix-container
+  .fa-solid.fa-mobile-screen-button {
   color: #7e7e7e;
 }
 .fonctionnement .fonctionnement__choix-container .fa-solid.fa-list {
@@ -349,7 +339,7 @@ h2 {
   height: 75%;
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .restaurants__card a .restaurants__card__content {
   display: flex;
@@ -451,4 +441,4 @@ h2 {
     opacity: 0;
     z-index: -1;
   }
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
